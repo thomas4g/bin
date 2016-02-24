@@ -1,0 +1,1 @@
+cat -A .pianobar_out | tail -n 1 | rev | cut -d' ' -f1 | rev | tr -d '^M'

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if pgrep --exact pianobar; then
+    echo -n "p" > ~/.config/pianobar/ctl
+else
+    pianobar > ~/.pianobar_out
+fi
